@@ -354,7 +354,9 @@ footer{border-top:1px solid var(--line);padding-block:2rem;color:var(--muted)}
           </div>
         </div>
         <div>
-          <form id="accessForm" novalidate>
+          <form id="accessForm" action="https://formspree.io/f/mrppdakl" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="New access request — Badger Tech Solutions">
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:0;height:0;opacity:0">
             <div>
               <label for="company">Company</label>
               <input id="company" name="company" autocomplete="organization" placeholder="Your e-hailing platform" required>
@@ -385,7 +387,10 @@ footer{border-top:1px solid var(--line);padding-block:2rem;color:var(--muted)}
             <button class="btn btn-primary" type="submit" style="justify-content:center">Request access</button>
           </form>
           <div class="submitted" id="done">
-            <b>Request received.</b><br>Thanks — once this page is wired to your backend, submissions will reach your partnerships team. For now, reach us directly at the email on the left.
+            <b>Request received.</b><br>Thanks — we'll be in touch shortly. You can also reach us directly at the email on the left.
+          </div>
+          <div class="submitted" id="formerr" style="display:none;background:#e3970018;border-color:#e3970066">
+            <b>Couldn't send just now.</b><br>Please try again, or email us directly at the address on the left.
           </div>
         </div>
       </div>
@@ -402,11 +407,16 @@ footer{border-top:1px solid var(--line);padding-block:2rem;color:var(--muted)}
 
 <script>
 (function(){
-  var form=document.getElementById('accessForm'),done=document.getElementById('done');
+  var form=document.getElementById('accessForm'),done=document.getElementById('done'),errBox=document.getElementById('formerr');
+  var submitBtn=form.querySelector('button[type="submit"]');
   form.addEventListener('submit',function(e){
     e.preventDefault();
     if(!form.checkValidity()){form.reportValidity();return;}
-    form.hidden=true;done.style.display='block';
+    if(errBox)errBox.style.display='none';
+    var orig=submitBtn.textContent; submitBtn.disabled=true; submitBtn.textContent='Sending…';
+    fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+      .then(function(r){ if(!r.ok) throw new Error('send failed'); form.hidden=true; done.style.display='block'; })
+      .catch(function(){ submitBtn.disabled=false; submitBtn.textContent=orig; if(errBox)errBox.style.display='block'; });
   });
   var btn=document.getElementById('copyEmail'),email=document.getElementById('salesEmail');
   btn.addEventListener('click',function(){
