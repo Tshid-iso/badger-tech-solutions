@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Badger Tech Solutions — Saved Drivers SDK for e-hailing platforms</title>
+<meta name="description" content="Badger Tech Solutions builds Saved Drivers, a licensed SDK that keeps e-hailing platforms' best rides on-platform with consent-based driver saving, filtered in-app chat and escrow-held fares.">
+<meta name="author" content="Badger Tech Solutions">
+<link rel="canonical" href="https://badgertechsolutions.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%201000%201000%22%3E%3Cstyle%3Epath%7Bfill%3A%2315181d%7D%40media%28prefers-color-scheme%3Adark%29%7Bpath%7Bfill%3A%23f0f3f7%7D%7D%3C/style%3E%3Cpath%20d%3D%22M%20787.22%20780.00%20C%20783.70%20766.48%20779.17%20754.63%20772.22%20742.78%20C%20765.28%20730.93%20759.44%20719.81%20745.56%20708.89%20C%20731.67%20697.96%20707.78%20691.57%20688.89%20677.22%20C%20670.00%20662.87%20644.26%20633.33%20632.22%20622.78%20C%20620.19%20612.22%20623.06%20616.20%20616.67%20613.89%20C%20610.28%20611.57%20603.70%20608.89%20593.89%20608.89%20C%20584.07%20608.89%20566.02%20611.94%20557.78%20613.89%20C%20549.54%20615.83%20549.17%20615.74%20544.44%20620.56%20C%20539.72%20625.37%20533.70%20638.24%20529.44%20642.78%20C%20525.19%20647.31%20524.44%20647.50%20518.89%20647.78%20C%20513.33%20648.06%20506.94%20647.78%20496.11%20644.44%20C%20485.28%20641.11%20466.94%20630.19%20453.89%20627.78%20C%20440.83%20625.37%20427.59%20627.96%20417.78%20630.00%20C%20407.96%20632.04%20402.59%20633.52%20395.00%20640.00%20C%20387.41%20646.48%20377.41%20655.00%20372.22%20668.89%20C%20367.04%20682.78%20368.15%20708.98%20363.89%20723.33%20C%20359.63%20737.69%20352.78%20746.85%20346.67%20755.00%20C%20340.56%20763.15%20337.04%20765.74%20327.22%20772.22%20C%20317.41%20778.70%20299.17%20785.00%20287.78%20793.89%20C%20276.39%20802.78%20266.39%20813.52%20258.89%20825.56%20C%20251.39%20837.59%20244.91%20852.31%20242.78%20866.11%20C%20240.65%20879.91%20243.15%20896.76%20246.11%20908.33%20C%20249.07%20919.91%20253.43%20927.41%20260.56%20935.56%20C%20267.69%20943.70%20280.00%20952.31%20288.89%20957.22%20C%20297.78%20962.13%20303.52%20963.61%20313.89%20965.00%20C%20324.26%20966.39%20339.07%20967.69%20351.11%20965.56%20C%20363.15%20963.43%20372.87%20960.93%20386.11%20952.22%20C%20399.35%20943.52%20418.33%20920.37%20430.56%20913.33%20C%20442.78%20906.30%20449.35%20909.54%20459.44%20910.00%20C%20469.54%20910.46%20481.94%20917.22%20491.11%20916.11%20C%20500.28%20915.00%20507.04%20909.17%20514.44%20903.33%20C%20521.85%20897.50%20525.00%20883.43%20535.56%20881.11%20C%20546.11%20878.80%20567.87%20889.26%20577.78%20889.44%20C%20587.69%20889.63%20588.89%20886.76%20595.00%20882.22%20C%20601.11%20877.69%20605.46%20866.48%20614.44%20862.22%20C%20623.43%20857.96%20638.24%20855.28%20648.89%20856.67%20C%20659.54%20858.06%20671.48%20866.02%20678.33%20870.56%20C%20685.19%20875.09%20686.30%20877.59%20690.00%20883.89%20C%20693.70%20890.19%20696.67%20902.13%20700.56%20908.33%20C%20704.44%20914.54%20708.06%20917.87%20713.33%20921.11%20C%20718.61%20924.35%20725.74%20926.85%20732.22%20927.78%20C%20738.70%20928.70%20744.91%20929.54%20752.22%20926.67%20C%20759.54%20923.80%20770.19%20917.87%20776.11%20910.56%20C%20782.04%20903.24%20784.91%20897.22%20787.78%20882.78%20C%20790.65%20868.33%20793.43%20841.02%20793.33%20823.89%20C%20793.24%20806.76%20790.74%20793.52%20787.22%20780.00%20Z%20M%20209.44%20534.44%20C%20202.41%20534.26%20196.11%20536.57%20190.00%20541.67%20C%20183.89%20546.76%20178.89%20552.13%20172.78%20565.00%20C%20166.67%20577.87%20157.22%20605.46%20153.33%20618.89%20C%20149.44%20632.31%20149.26%20636.30%20149.44%20645.56%20C%20149.63%20654.81%20151.94%20666.02%20154.44%20674.44%20C%20156.94%20682.87%20161.02%20690.83%20164.44%20696.11%20C%20167.87%20701.39%20168.43%20702.78%20175.00%20706.11%20C%20181.57%20709.44%20196.67%20714.81%20203.89%20716.11%20C%20211.11%20717.41%20210.46%20717.31%20218.33%20713.89%20C%20226.20%20710.46%20244.44%20701.11%20251.11%20695.56%20C%20257.78%20690.00%20256.48%20688.52%20258.33%20680.56%20C%20260.19%20672.59%20262.22%20660.74%20262.22%20647.78%20C%20262.22%20634.81%20261.39%20617.50%20258.33%20602.78%20C%20255.28%20588.06%20248.24%20569.44%20243.89%20559.44%20C%20239.54%20549.44%20237.96%20546.94%20232.22%20542.78%20C%20226.48%20538.61%20216.48%20534.63%20209.44%20534.44%20Z%20M%20795.56%20457.78%20C%20788.70%20458.61%20781.57%20461.76%20776.11%20467.22%20C%20770.65%20472.69%20767.04%20479.26%20762.78%20490.56%20C%20758.52%20501.85%20752.87%20520.00%20750.56%20535.00%20C%20748.24%20550.00%20748.33%20568.33%20748.89%20580.56%20C%20749.44%20592.78%20751.48%20601.39%20753.89%20608.33%20C%20756.30%20615.28%20756.94%20617.50%20763.33%20622.22%20C%20769.72%20626.94%20784.63%20633.89%20792.22%20636.67%20C%20799.81%20639.44%20802.13%20639.91%20808.89%20638.89%20C%20815.65%20637.87%20826.57%20633.89%20832.78%20630.56%20C%20838.98%20627.22%20841.85%20625.83%20846.11%20618.89%20C%20850.37%20611.94%20856.02%20599.26%20858.33%20588.89%20C%20860.65%20578.52%20864.44%20575.28%20860.00%20556.67%20C%20855.56%20538.06%20838.80%20492.96%20831.67%20477.22%20C%20824.54%20461.48%20823.24%20465.46%20817.22%20462.22%20C%20811.20%20458.98%20802.41%20456.94%20795.56%20457.78%20Z%20M%20180.00%20400.00%20C%20176.67%20400.56%20169.81%20399.63%20164.44%20407.22%20C%20159.07%20414.81%20151.57%20431.30%20147.78%20445.56%20C%20143.98%20459.81%20140.93%20483.15%20141.67%20492.78%20C%20142.41%20502.41%20147.59%20502.13%20152.22%20503.33%20C%20156.85%20504.54%20164.72%20503.70%20169.44%20500.00%20C%20174.17%20496.30%20178.06%20497.13%20180.56%20481.11%20C%20183.06%20465.09%20184.54%20417.41%20184.44%20403.89%20C%20184.35%20390.37%20183.33%20399.44%20180.00%20400.00%20Z%20M%20801.11%20331.67%20C%20798.06%20331.11%20796.76%20332.87%20795.00%20337.22%20C%20793.24%20341.57%20791.20%20346.76%20790.56%20357.78%20C%20789.91%20368.80%20790.00%20393.61%20791.11%20403.33%20C%20792.22%20413.06%20793.15%20412.96%20797.22%20416.11%20C%20801.30%20419.26%20810.19%20423.24%20815.56%20422.22%20C%20820.93%20421.20%20827.31%20414.54%20829.44%20410.00%20C%20831.57%20405.46%20831.02%20406.57%20828.33%20395.00%20C%20825.65%20383.43%20817.87%20351.11%20813.33%20340.56%20C%20808.80%20330.00%20804.17%20332.22%20801.11%20331.67%20Z%20M%20680.00%20258.33%20C%20671.67%20260.37%20660.83%20260.74%20651.67%20272.78%20C%20642.50%20284.81%20630.56%20314.26%20625.00%20330.56%20C%20619.44%20346.85%20618.98%20351.76%20618.33%20370.56%20C%20617.69%20389.35%20619.91%20428.43%20621.11%20443.33%20C%20622.31%20458.24%20623.15%20454.91%20625.56%20460.00%20C%20627.96%20465.09%20623.33%20469.81%20635.56%20473.89%20C%20647.78%20477.96%20684.17%20484.63%20698.89%20484.44%20C%20713.61%20484.26%20717.41%20478.24%20723.89%20472.78%20C%20730.37%20467.31%20734.35%20460.65%20737.78%20451.67%20C%20741.20%20442.69%20743.33%20431.48%20744.44%20418.89%20C%20745.56%20406.30%20745.56%20389.72%20744.44%20376.11%20C%20743.33%20362.50%20742.59%20354.54%20737.78%20337.22%20C%20732.96%20319.91%20721.57%20285.00%20715.56%20272.22%20C%20709.54%20259.44%20707.59%20262.87%20701.67%20260.56%20C%20695.74%20258.24%20688.33%20256.30%20680.00%20258.33%20Z%20M%20304.44%20258.33%20C%20295.56%20259.72%20287.13%20261.85%20280.56%20270.00%20C%20273.98%20278.15%20269.07%20293.98%20265.00%20307.22%20C%20260.93%20320.46%20257.50%20335.00%20256.11%20349.44%20C%20254.72%20363.89%20255.46%20381.20%20256.67%20393.89%20C%20257.87%20406.57%20259.72%20414.63%20263.33%20425.56%20C%20266.94%20436.48%20271.11%20450.83%20278.33%20459.44%20C%20285.56%20468.06%20297.87%20473.80%20306.67%20477.22%20C%20315.46%20480.65%20323.24%20481.57%20331.11%20480.00%20C%20338.98%20478.43%20347.31%20473.89%20353.89%20467.78%20C%20360.46%20461.67%20366.11%20453.06%20370.56%20443.33%20C%20375.00%20433.61%20378.80%20424.07%20380.56%20409.44%20C%20382.31%20394.81%20382.96%20372.41%20381.11%20355.56%20C%20379.26%20338.70%20374.07%20321.48%20369.44%20308.33%20C%20364.81%20295.19%20359.26%20284.44%20353.33%20276.67%20C%20347.41%20268.89%20342.04%20264.72%20333.89%20261.67%20C%20325.74%20258.61%20313.33%20256.94%20304.44%20258.33%20Z%20M%20493.89%20179.44%20C%20485.65%20181.94%20472.78%20188.98%20463.89%20198.33%20C%20455.00%20207.69%20446.57%20222.50%20440.56%20235.56%20C%20434.54%20248.61%20430.65%20261.02%20427.78%20276.67%20C%20424.91%20292.31%20423.15%20314.07%20423.33%20329.44%20C%20423.52%20344.81%20425.09%20355.09%20428.89%20368.89%20C%20432.69%20382.69%20439.17%20401.20%20446.11%20412.22%20C%20453.06%20423.24%20460.00%20429.54%20470.56%20435.00%20C%20481.11%20440.46%20498.89%20445.09%20509.44%20445.00%20C%20520.00%20444.91%20525.46%20442.31%20533.89%20434.44%20C%20542.31%20426.57%20554.17%20410.19%20560.00%20397.78%20C%20565.83%20385.37%20567.22%20372.96%20568.89%20360.00%20C%20570.56%20347.04%20571.30%20334.54%20570.00%20320.00%20C%20568.70%20305.46%20567.31%20292.87%20561.11%20272.78%20C%20554.91%20252.69%20540.74%20214.35%20532.78%20199.44%20C%20524.81%20184.54%20519.81%20186.67%20513.33%20183.33%20C%20506.85%20180.00%20502.13%20176.94%20493.89%20179.44%20Z%20M%20668.33%2086.67%20C%20664.81%2086.02%20661.94%2089.54%20660.00%2092.22%20C%20658.06%2094.91%20657.96%2088.06%20656.67%20102.78%20C%20655.37%20117.50%20650.65%20163.24%20652.22%20180.56%20C%20653.80%20197.87%20660.37%20201.30%20666.11%20206.67%20C%20671.85%20212.04%20681.11%20213.89%20686.67%20212.78%20C%20692.22%20211.67%20697.31%20206.85%20699.44%20200.00%20C%20701.57%20193.15%20702.50%20188.98%20699.44%20171.67%20C%20696.39%20154.35%20686.30%20110.28%20681.11%2096.11%20C%20675.93%2081.94%20671.85%2087.31%20668.33%2086.67%20Z%20M%20305.00%2075.56%20C%20302.59%2074.81%20300.74%2074.35%20298.33%2076.67%20C%20295.93%2078.98%20294.63%2075.83%20290.56%2089.44%20C%20286.48%20103.06%20276.48%20141.11%20273.89%20158.33%20C%20271.30%20175.56%20273.15%20185.65%20275.00%20192.78%20C%20276.85%20199.91%20279.63%20200.74%20285.00%20201.11%20C%20290.37%20201.48%20301.39%20199.35%20307.22%20195.00%20C%20313.06%20190.65%20318.43%20191.94%20320.00%20175.00%20C%20321.57%20158.06%20317.87%20108.98%20316.67%2093.33%20C%20315.46%2077.69%20314.72%2084.07%20312.78%2081.11%20C%20310.83%2078.15%20307.41%2076.30%20305.00%2075.56%20Z%20M%20478.33%2032.78%20C%20474.35%2033.61%20470.28%2026.20%20468.89%2043.89%20C%20467.50%2061.57%20468.61%20121.85%20470.00%20138.89%20C%20471.39%20155.93%20470.09%20144.91%20477.22%20146.11%20C%20484.35%20147.31%20505.65%20147.13%20512.78%20146.11%20C%20519.91%20145.09%20518.61%20143.06%20520.00%20140.00%20C%20521.39%20136.94%20523.61%20139.81%20521.11%20127.78%20C%20518.61%20115.74%20509.72%2082.59%20505.00%2067.78%20C%20500.28%2052.96%20497.22%2044.72%20492.78%2038.89%20C%20488.33%2033.06%20482.31%2031.94%20478.33%2032.78%20Z%22/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Badger Tech Solutions">
+<meta property="og:title" content="Badger Tech Solutions — Keep your best rides on-platform">
+<meta property="og:description" content="Badger Tech Solutions builds Saved Drivers, a licensed SDK that keeps e-hailing platforms' best rides on-platform with consent-based driver saving, filtered in-app chat and escrow-held fares.">
+<meta property="og:url" content="https://badgertechsolutions.com/">
+<meta property="og:image" content="https://badgertechsolutions.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Badger Tech Solutions — Keep your best rides on-platform">
+<meta name="twitter:description" content="Badger Tech Solutions builds Saved Drivers, a licensed SDK that keeps e-hailing platforms' best rides on-platform with consent-based driver saving, filtered in-app chat and escrow-held fares.">
+<meta name="twitter:image" content="https://badgertechsolutions.com/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  html{color-scheme:light}
+  :root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+  *{box-sizing:border-box}
+  body{margin:0}
+  img{max-width:100%}
+  [hidden]{display:none!important}
+</style>
+<style>
+/* Layout: single-column B2B narrative — sticky slim header, thesis hero, 3-step handshake sequence, feature grid, escrow economics band, request-access CTA. Cool neutrals vs. warm signal-amber accent; badger-stripe as a thin brand device. */
+:root{
+  --bg:#eceef1; --surface:#ffffff; --surface-2:#f5f6f8;
+  --ink:#14161a; --muted:#596069; --line:#d7dbe0;
+  --accent:#e39700; --accent-ink:#3a2700;
+  --trust:#0d7a72; --trust-soft:#0d7a7215;
+  --display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0d0f12; --surface:#15181d; --surface-2:#1b1f25;
+  --ink:#edf0f4; --muted:#99a1ac; --line:#262b33;
+  --accent:#ffb425; --accent-ink:#1a1202;
+  --trust:#34b7ac; --trust-soft:#34b7ac1f;
+  color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#0d0f12; --surface:#15181d; --surface-2:#1b1f25;
+  --ink:#edf0f4; --muted:#99a1ac; --line:#262b33;
+  --accent:#ffb425; --accent-ink:#1a1202;
+  --trust:#34b7ac; --trust-soft:#34b7ac1f;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin-inline:auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.05;letter-spacing:-.02em;text-wrap:balance;margin:0}
+p{margin:0}
+a{color:inherit}
+.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.accent-txt{color:var(--accent)}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:21;background:var(--bg)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.85rem}
+.brand{display:flex;align-items:center;gap:.6rem;font-family:var(--display);font-weight:800;letter-spacing:-.02em;font-size:1.02rem}
+.mark{width:28px;height:28px;flex:0 0 auto;border-radius:50%;background:var(--surface-2);border:1px solid var(--line);display:grid;place-items:center;color:var(--ink)}
+.mark .paw{width:60%;height:60%;display:block;fill:currentColor}
+.navcta{font-family:var(--body);font-weight:600;font-size:.9rem;text-decoration:none;padding:.5rem .9rem;border:1px solid var(--line);border-radius:7px}
+.navcta:hover{border-color:var(--ink)}
+
+/* buttons */
+.btn{font-family:var(--body);font-weight:600;font-size:.95rem;border-radius:8px;padding:.72rem 1.15rem;border:1px solid transparent;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;transition:transform .08s ease,filter .15s ease}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{filter:brightness(1.05)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--ink)}
+
+/* hero */
+.hero{padding-block:clamp(3rem,8vw,6rem) clamp(2.5rem,5vw,4rem)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(1.5rem,4vw,3rem);align-items:center}
+.hero h1{font-size:clamp(2.3rem,5.4vw,3.9rem)}
+.hero .lead{margin-top:1.1rem;font-size:clamp(1.02rem,1.9vw,1.2rem);color:var(--muted);max-width:34ch}
+.hero .actions{margin-top:1.8rem;display:flex;flex-wrap:wrap;gap:.7rem}
+.hero .fineprint{margin-top:1.1rem;font-family:var(--mono);font-size:.72rem;color:var(--muted);letter-spacing:.02em}
+
+/* phone mock */
+.scene{position:relative;min-width:0;display:grid;place-items:center}
+.phone{width:min(260px,78vw);background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:.7rem;box-shadow:0 24px 50px -24px rgba(0,0,0,.35)}
+.phone-top{display:flex;align-items:center;justify-content:space-between;padding:.2rem .5rem .6rem;font-family:var(--mono);font-size:.62rem;color:var(--muted)}
+.card-saved{background:var(--surface-2);border:1px solid var(--line);border-radius:14px;padding:.7rem}
+.card-saved .hd{font-family:var(--display);font-weight:800;font-size:.82rem;display:flex;align-items:center;gap:.4rem;margin-bottom:.55rem}
+.pill{font-family:var(--mono);font-size:.56rem;letter-spacing:.08em;text-transform:uppercase;padding:.14rem .4rem;border-radius:999px;background:var(--trust-soft);color:var(--trust);border:1px solid color-mix(in srgb,var(--trust) 40%,transparent)}
+.drow{display:flex;align-items:center;gap:.55rem;padding:.45rem .2rem;border-top:1px solid var(--line)}
+.drow:first-of-type{border-top:0}
+.ava{width:30px;height:30px;border-radius:50%;flex:0 0 auto;background:linear-gradient(135deg,var(--accent),var(--trust));display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:.72rem;color:#0d0f12}
+.dmeta{min-width:0;flex:1}
+.dname{font-size:.78rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dsub{font-family:var(--mono);font-size:.6rem;color:var(--muted)}
+.chatbtn{font-family:var(--body);font-size:.64rem;font-weight:600;border:1px solid var(--line);border-radius:6px;padding:.25rem .5rem;background:var(--surface);color:var(--ink)}
+.consent{margin-top:.6rem;background:var(--ink);color:var(--surface);border-radius:12px;padding:.6rem .7rem}
+.consent p{font-size:.68rem;line-height:1.4}
+.consent .mini{margin-top:.5rem;display:flex;gap:.4rem}
+.consent .mini b{font-family:var(--body);font-size:.62rem;font-weight:600;padding:.28rem .55rem;border-radius:6px}
+.mini .yes{background:var(--accent);color:var(--accent-ink)}
+.mini .no{background:transparent;border:1px solid color-mix(in srgb,var(--surface) 35%,transparent);color:var(--surface)}
+
+/* section scaffolding */
+section{padding-block:clamp(2.5rem,6vw,4.5rem)}
+.band{background:var(--surface);border-block:1px solid var(--line)}
+.sec-head{max-width:46ch}
+.sec-head h2{font-size:clamp(1.6rem,3.6vw,2.4rem)}
+.sec-head p{margin-top:.7rem;color:var(--muted);font-size:1.02rem}
+
+/* problem stat strip */
+.leak{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-items:start}
+.leak .copy p{color:var(--muted);margin-top:.8rem;max-width:40ch}
+.leak .copy h2{font-size:clamp(1.6rem,3.6vw,2.4rem)}
+.statcard{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.2rem 1.3rem;display:flex;flex-direction:column;gap:.2rem}
+.statcard .n{font-family:var(--display);font-weight:800;font-size:clamp(2rem,5vw,2.8rem);letter-spacing:-.03em;color:var(--accent);font-variant-numeric:tabular-nums}
+.statcard .l{color:var(--muted);font-size:.92rem}
+.stacked{display:flex;flex-direction:column;gap:1rem}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-top:2rem;counter-reset:s}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.3rem;position:relative}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:var(--mono);font-size:.8rem;color:var(--accent);letter-spacing:.05em}
+.step h3{font-size:1.1rem;margin:.6rem 0 .5rem}
+.step p{color:var(--muted);font-size:.93rem}
+.step .tag{margin-top:.8rem;font-family:var(--mono);font-size:.64rem;letter-spacing:.06em;text-transform:uppercase;color:var(--trust)}
+
+/* features */
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-top:2rem}
+.feat{border:1px solid var(--line);border-radius:14px;padding:1.2rem;background:var(--surface-2)}
+.feat .ic{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;background:var(--surface);border:1px solid var(--line);margin-bottom:.8rem}
+.feat .ic svg{width:18px;height:18px;stroke:var(--accent);fill:none;stroke-width:1.8}
+.feat h3{font-size:1rem;margin-bottom:.4rem}
+.feat p{color:var(--muted);font-size:.9rem}
+
+/* economics */
+.econ-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(1.5rem,4vw,3rem);align-items:center}
+.flow{display:flex;flex-direction:column;gap:.55rem}
+.flowrow{display:flex;align-items:center;justify-content:space-between;gap:.8rem;background:var(--surface);border:1px solid var(--line);border-radius:11px;padding:.85rem 1rem}
+.flowrow .who{font-weight:600;font-size:.95rem;display:flex;align-items:center;gap:.6rem}
+.flowrow .who i{width:9px;height:9px;border-radius:2px;display:inline-block}
+.flowrow .amt{font-family:var(--mono);font-size:.95rem;font-variant-numeric:tabular-nums}
+.flow-note{font-family:var(--mono);font-size:.68rem;color:var(--muted);text-align:center}
+.econ .sec-head h2{font-size:clamp(1.6rem,3.6vw,2.4rem)}
+.econ ul{list-style:none;padding:0;margin:1.1rem 0 0;display:flex;flex-direction:column;gap:.7rem}
+.econ li{display:flex;gap:.6rem;color:var(--muted);font-size:.98rem}
+.econ li b{color:var(--ink)}
+.chk{flex:0 0 auto;width:20px;height:20px;border-radius:50%;background:var(--trust-soft);color:var(--trust);display:grid;place-items:center;font-size:.72rem;margin-top:.15rem}
+
+/* cta */
+.cta-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:clamp(1.5rem,4vw,2.6rem);display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,4vw,2.6rem);align-items:start}
+.cta-card h2{font-size:clamp(1.5rem,3.2vw,2.1rem)}
+.cta-card .blurb{color:var(--muted);margin-top:.7rem;font-size:1rem;max-width:38ch}
+.contact{margin-top:1.3rem;display:flex;flex-direction:column;gap:.6rem}
+.mailrow{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;font-family:var(--mono);font-size:.86rem;background:var(--surface-2);border:1px solid var(--line);border-radius:9px;padding:.6rem .8rem}
+.mailrow button{font-family:var(--body);font-weight:600;font-size:.74rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:6px;padding:.3rem .55rem;cursor:pointer;margin-left:auto}
+.mailrow button:hover{border-color:var(--ink)}
+form{display:flex;flex-direction:column;gap:.75rem}
+label{font-size:.82rem;font-weight:600;display:block;margin-bottom:.3rem}
+input,select,textarea{width:100%;font-family:var(--body);font-size:.92rem;color:var(--ink);background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:.62rem .7rem}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:transparent}
+textarea{resize:vertical;min-height:72px}
+.field2{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+.submitted{display:none;background:var(--trust-soft);border:1px solid color-mix(in srgb,var(--trust) 45%,transparent);border-radius:10px;padding:1.1rem;color:var(--ink)}
+.submitted b{color:var(--trust)}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding-block:2rem;color:var(--muted)}
+.foot{display:flex;flex-wrap:wrap;gap:.8rem 1.4rem;align-items:center;justify-content:space-between;font-size:.84rem}
+.foot .fb{display:flex;align-items:center;gap:.55rem;font-family:var(--display);font-weight:800;color:var(--ink)}
+.foot .meta{font-family:var(--mono);font-size:.72rem}
+
+@media (max-width:860px){
+  .hero-grid,.leak,.econ-grid,.cta-card{grid-template-columns:1fr}
+  .scene{order:-1}
+  .steps,.feats{grid-template-columns:1fr}
+  .field2{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <div class="brand"><span class="mark"><svg class="paw" viewBox="0 0 1000 1000" aria-hidden="true"><path d="M 787.22 780.00 C 783.70 766.48 779.17 754.63 772.22 742.78 C 765.28 730.93 759.44 719.81 745.56 708.89 C 731.67 697.96 707.78 691.57 688.89 677.22 C 670.00 662.87 644.26 633.33 632.22 622.78 C 620.19 612.22 623.06 616.20 616.67 613.89 C 610.28 611.57 603.70 608.89 593.89 608.89 C 584.07 608.89 566.02 611.94 557.78 613.89 C 549.54 615.83 549.17 615.74 544.44 620.56 C 539.72 625.37 533.70 638.24 529.44 642.78 C 525.19 647.31 524.44 647.50 518.89 647.78 C 513.33 648.06 506.94 647.78 496.11 644.44 C 485.28 641.11 466.94 630.19 453.89 627.78 C 440.83 625.37 427.59 627.96 417.78 630.00 C 407.96 632.04 402.59 633.52 395.00 640.00 C 387.41 646.48 377.41 655.00 372.22 668.89 C 367.04 682.78 368.15 708.98 363.89 723.33 C 359.63 737.69 352.78 746.85 346.67 755.00 C 340.56 763.15 337.04 765.74 327.22 772.22 C 317.41 778.70 299.17 785.00 287.78 793.89 C 276.39 802.78 266.39 813.52 258.89 825.56 C 251.39 837.59 244.91 852.31 242.78 866.11 C 240.65 879.91 243.15 896.76 246.11 908.33 C 249.07 919.91 253.43 927.41 260.56 935.56 C 267.69 943.70 280.00 952.31 288.89 957.22 C 297.78 962.13 303.52 963.61 313.89 965.00 C 324.26 966.39 339.07 967.69 351.11 965.56 C 363.15 963.43 372.87 960.93 386.11 952.22 C 399.35 943.52 418.33 920.37 430.56 913.33 C 442.78 906.30 449.35 909.54 459.44 910.00 C 469.54 910.46 481.94 917.22 491.11 916.11 C 500.28 915.00 507.04 909.17 514.44 903.33 C 521.85 897.50 525.00 883.43 535.56 881.11 C 546.11 878.80 567.87 889.26 577.78 889.44 C 587.69 889.63 588.89 886.76 595.00 882.22 C 601.11 877.69 605.46 866.48 614.44 862.22 C 623.43 857.96 638.24 855.28 648.89 856.67 C 659.54 858.06 671.48 866.02 678.33 870.56 C 685.19 875.09 686.30 877.59 690.00 883.89 C 693.70 890.19 696.67 902.13 700.56 908.33 C 704.44 914.54 708.06 917.87 713.33 921.11 C 718.61 924.35 725.74 926.85 732.22 927.78 C 738.70 928.70 744.91 929.54 752.22 926.67 C 759.54 923.80 770.19 917.87 776.11 910.56 C 782.04 903.24 784.91 897.22 787.78 882.78 C 790.65 868.33 793.43 841.02 793.33 823.89 C 793.24 806.76 790.74 793.52 787.22 780.00 Z M 209.44 534.44 C 202.41 534.26 196.11 536.57 190.00 541.67 C 183.89 546.76 178.89 552.13 172.78 565.00 C 166.67 577.87 157.22 605.46 153.33 618.89 C 149.44 632.31 149.26 636.30 149.44 645.56 C 149.63 654.81 151.94 666.02 154.44 674.44 C 156.94 682.87 161.02 690.83 164.44 696.11 C 167.87 701.39 168.43 702.78 175.00 706.11 C 181.57 709.44 196.67 714.81 203.89 716.11 C 211.11 717.41 210.46 717.31 218.33 713.89 C 226.20 710.46 244.44 701.11 251.11 695.56 C 257.78 690.00 256.48 688.52 258.33 680.56 C 260.19 672.59 262.22 660.74 262.22 647.78 C 262.22 634.81 261.39 617.50 258.33 602.78 C 255.28 588.06 248.24 569.44 243.89 559.44 C 239.54 549.44 237.96 546.94 232.22 542.78 C 226.48 538.61 216.48 534.63 209.44 534.44 Z M 795.56 457.78 C 788.70 458.61 781.57 461.76 776.11 467.22 C 770.65 472.69 767.04 479.26 762.78 490.56 C 758.52 501.85 752.87 520.00 750.56 535.00 C 748.24 550.00 748.33 568.33 748.89 580.56 C 749.44 592.78 751.48 601.39 753.89 608.33 C 756.30 615.28 756.94 617.50 763.33 622.22 C 769.72 626.94 784.63 633.89 792.22 636.67 C 799.81 639.44 802.13 639.91 808.89 638.89 C 815.65 637.87 826.57 633.89 832.78 630.56 C 838.98 627.22 841.85 625.83 846.11 618.89 C 850.37 611.94 856.02 599.26 858.33 588.89 C 860.65 578.52 864.44 575.28 860.00 556.67 C 855.56 538.06 838.80 492.96 831.67 477.22 C 824.54 461.48 823.24 465.46 817.22 462.22 C 811.20 458.98 802.41 456.94 795.56 457.78 Z M 180.00 400.00 C 176.67 400.56 169.81 399.63 164.44 407.22 C 159.07 414.81 151.57 431.30 147.78 445.56 C 143.98 459.81 140.93 483.15 141.67 492.78 C 142.41 502.41 147.59 502.13 152.22 503.33 C 156.85 504.54 164.72 503.70 169.44 500.00 C 174.17 496.30 178.06 497.13 180.56 481.11 C 183.06 465.09 184.54 417.41 184.44 403.89 C 184.35 390.37 183.33 399.44 180.00 400.00 Z M 801.11 331.67 C 798.06 331.11 796.76 332.87 795.00 337.22 C 793.24 341.57 791.20 346.76 790.56 357.78 C 789.91 368.80 790.00 393.61 791.11 403.33 C 792.22 413.06 793.15 412.96 797.22 416.11 C 801.30 419.26 810.19 423.24 815.56 422.22 C 820.93 421.20 827.31 414.54 829.44 410.00 C 831.57 405.46 831.02 406.57 828.33 395.00 C 825.65 383.43 817.87 351.11 813.33 340.56 C 808.80 330.00 804.17 332.22 801.11 331.67 Z M 680.00 258.33 C 671.67 260.37 660.83 260.74 651.67 272.78 C 642.50 284.81 630.56 314.26 625.00 330.56 C 619.44 346.85 618.98 351.76 618.33 370.56 C 617.69 389.35 619.91 428.43 621.11 443.33 C 622.31 458.24 623.15 454.91 625.56 460.00 C 627.96 465.09 623.33 469.81 635.56 473.89 C 647.78 477.96 684.17 484.63 698.89 484.44 C 713.61 484.26 717.41 478.24 723.89 472.78 C 730.37 467.31 734.35 460.65 737.78 451.67 C 741.20 442.69 743.33 431.48 744.44 418.89 C 745.56 406.30 745.56 389.72 744.44 376.11 C 743.33 362.50 742.59 354.54 737.78 337.22 C 732.96 319.91 721.57 285.00 715.56 272.22 C 709.54 259.44 707.59 262.87 701.67 260.56 C 695.74 258.24 688.33 256.30 680.00 258.33 Z M 304.44 258.33 C 295.56 259.72 287.13 261.85 280.56 270.00 C 273.98 278.15 269.07 293.98 265.00 307.22 C 260.93 320.46 257.50 335.00 256.11 349.44 C 254.72 363.89 255.46 381.20 256.67 393.89 C 257.87 406.57 259.72 414.63 263.33 425.56 C 266.94 436.48 271.11 450.83 278.33 459.44 C 285.56 468.06 297.87 473.80 306.67 477.22 C 315.46 480.65 323.24 481.57 331.11 480.00 C 338.98 478.43 347.31 473.89 353.89 467.78 C 360.46 461.67 366.11 453.06 370.56 443.33 C 375.00 433.61 378.80 424.07 380.56 409.44 C 382.31 394.81 382.96 372.41 381.11 355.56 C 379.26 338.70 374.07 321.48 369.44 308.33 C 364.81 295.19 359.26 284.44 353.33 276.67 C 347.41 268.89 342.04 264.72 333.89 261.67 C 325.74 258.61 313.33 256.94 304.44 258.33 Z M 493.89 179.44 C 485.65 181.94 472.78 188.98 463.89 198.33 C 455.00 207.69 446.57 222.50 440.56 235.56 C 434.54 248.61 430.65 261.02 427.78 276.67 C 424.91 292.31 423.15 314.07 423.33 329.44 C 423.52 344.81 425.09 355.09 428.89 368.89 C 432.69 382.69 439.17 401.20 446.11 412.22 C 453.06 423.24 460.00 429.54 470.56 435.00 C 481.11 440.46 498.89 445.09 509.44 445.00 C 520.00 444.91 525.46 442.31 533.89 434.44 C 542.31 426.57 554.17 410.19 560.00 397.78 C 565.83 385.37 567.22 372.96 568.89 360.00 C 570.56 347.04 571.30 334.54 570.00 320.00 C 568.70 305.46 567.31 292.87 561.11 272.78 C 554.91 252.69 540.74 214.35 532.78 199.44 C 524.81 184.54 519.81 186.67 513.33 183.33 C 506.85 180.00 502.13 176.94 493.89 179.44 Z M 668.33 86.67 C 664.81 86.02 661.94 89.54 660.00 92.22 C 658.06 94.91 657.96 88.06 656.67 102.78 C 655.37 117.50 650.65 163.24 652.22 180.56 C 653.80 197.87 660.37 201.30 666.11 206.67 C 671.85 212.04 681.11 213.89 686.67 212.78 C 692.22 211.67 697.31 206.85 699.44 200.00 C 701.57 193.15 702.50 188.98 699.44 171.67 C 696.39 154.35 686.30 110.28 681.11 96.11 C 675.93 81.94 671.85 87.31 668.33 86.67 Z M 305.00 75.56 C 302.59 74.81 300.74 74.35 298.33 76.67 C 295.93 78.98 294.63 75.83 290.56 89.44 C 286.48 103.06 276.48 141.11 273.89 158.33 C 271.30 175.56 273.15 185.65 275.00 192.78 C 276.85 199.91 279.63 200.74 285.00 201.11 C 290.37 201.48 301.39 199.35 307.22 195.00 C 313.06 190.65 318.43 191.94 320.00 175.00 C 321.57 158.06 317.87 108.98 316.67 93.33 C 315.46 77.69 314.72 84.07 312.78 81.11 C 310.83 78.15 307.41 76.30 305.00 75.56 Z M 478.33 32.78 C 474.35 33.61 470.28 26.20 468.89 43.89 C 467.50 61.57 468.61 121.85 470.00 138.89 C 471.39 155.93 470.09 144.91 477.22 146.11 C 484.35 147.31 505.65 147.13 512.78 146.11 C 519.91 145.09 518.61 143.06 520.00 140.00 C 521.39 136.94 523.61 139.81 521.11 127.78 C 518.61 115.74 509.72 82.59 505.00 67.78 C 500.28 52.96 497.22 44.72 492.78 38.89 C 488.33 33.06 482.31 31.94 478.33 32.78 Z"/></svg></span>Badger&nbsp;Tech&nbsp;Solutions</div>
+    <a class="navcta" href="#request">Request access</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Drop-in SDK · e-hailing platforms</div>
+        <h1>Keep your best rides <span class="accent-txt">on-platform</span>.</h1>
+        <p class="lead">Saved Drivers lets riders re-book the drivers they trust — by mutual consent, with filtered chat and escrow-held fares — so loyalty between people never leaks your commission off-app.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#request">Request access</a>
+          <a class="btn btn-ghost" href="#how">See how it works</a>
+        </div>
+        <p class="fineprint">Licensed integration · Premium feature for your subscribers · 0.5% of ride royalties</p>
+      </div>
+
+      <div class="scene">
+        <div class="phone" aria-hidden="true">
+          <div class="phone-top"><span>9:41</span><span>SAVED DRIVERS</span></div>
+          <div class="card-saved">
+            <div class="hd">Saved Drivers <span class="pill">Premium</span></div>
+            <div class="drow">
+              <div class="ava">TM</div>
+              <div class="dmeta"><div class="dname">Thabo M.</div><div class="dsub">★ 4.98 · 23 trips</div></div>
+              <button class="chatbtn">Chat</button>
+            </div>
+            <div class="drow">
+              <div class="ava">NK</div>
+              <div class="dmeta"><div class="dname">Naledi K.</div><div class="dsub">★ 4.95 · 11 trips</div></div>
+              <button class="chatbtn">Chat</button>
+            </div>
+          </div>
+          <div class="consent">
+            <p><b>Save this driver?</b> You both opted in on your last card trip. Re-book Thabo directly next time.</p>
+            <div class="mini"><b class="yes">Save driver</b><b class="no">Not now</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap leak">
+      <div class="copy">
+        <div class="eyebrow">The leakage problem</div>
+        <h2>When a rider and a driver click, they take the next ride off your platform.</h2>
+        <p>Numbers get swapped, cash changes hands, and the trip — plus every trip after it — stops paying commission. The relationship you created becomes revenue you never see.</p>
+      </div>
+      <div class="stacked">
+        <div class="statcard"><span class="n">0%</span><span class="l">commission earned once a regular rider goes cash-and-contact off-app</span></div>
+        <div class="statcard"><span class="n">100%</span><span class="l">of Saved-Drivers re-bookings stay card-paid, escrow-held and on your platform</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">How it works</div>
+        <h2>Consent first, then convenience — all of it inside your app.</h2>
+        <p>The handshake is offered only after a premium rider completes a card-paid trip, so every saved pairing is already a paying, verified relationship.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>The handshake</h3>
+          <p>After a card-paid premium trip, a save prompt appears on the rider's side first, then the driver's. A pairing is created only when both opt in.</p>
+          <div class="tag">Mutual consent</div>
+        </div>
+        <div class="step">
+          <h3>Saved Drivers</h3>
+          <p>The driver lands in the rider's Saved Drivers list. Next time, the rider re-books that exact driver in a tap — no searching, no going elsewhere.</p>
+          <div class="tag">Rider retention</div>
+        </div>
+        <div class="step">
+          <h3>Escrow &amp; filtered chat</h3>
+          <p>Re-booked fares are held in escrow until the trip completes, and in-app chat screens out attempts to arrange off-platform payment. Your take rate stays whole.</p>
+          <div class="tag">Leak protection</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">What's in the SDK</div>
+        <h2>Six parts, one job: stop the relationship from leaving.</h2>
+      </div>
+      <div class="feats">
+        <div class="feat">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM2 20a6 6 0 0 1 12 0M16 7l2 2 4-4"/></svg></div>
+          <h3>Consent-based handshake</h3>
+          <p>A two-sided opt-in — rider then driver — so no one is saved without agreement from both.</p>
+        </div>
+        <div class="feat">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 16.5 7.1 19.2 8 13.7l-4-3.9L9.5 8 12 3z"/></svg></div>
+          <h3>Saved Drivers list</h3>
+          <p>Trusted drivers kept one tap away for premium riders, driving repeat on-platform bookings.</p>
+        </div>
+        <div class="feat">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-4-7.5M7 10h5M7 13h3"/><path d="M15 8h6M18 5v6"/></svg></div>
+          <h3>NLP payment-leak filters</h3>
+          <p>In-app chat screens messages for attempts to share alternative payment details and blocks the hand-off.</p>
+        </div>
+        <div class="feat">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>Escrow holds</h3>
+          <p>Saved-driver fares sit in escrow until completion, closing the cash-bypass window entirely.</p>
+        </div>
+        <div class="feat">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 10h18M7 15h4M6 5h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/></svg></div>
+          <h3>Premium &amp; card gating</h3>
+          <p>The handshake unlocks only for subscribers who paid by card on that trip — quality by design.</p>
+        </div>
+        <div class="feat">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M13 5l-2 14"/></svg></div>
+          <h3>Drop-in integration</h3>
+          <p>A licensed SDK your team embeds into your existing rider and driver apps — no rebuild required.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="econ">
+    <div class="wrap econ-grid">
+      <div class="flow">
+        <div class="flow-note">On a saved-driver trip, the split stays familiar</div>
+        <div class="flowrow"><span class="who"><i style="background:var(--trust)"></i>Driver</span><span class="amt">earns as usual</span></div>
+        <div class="flowrow"><span class="who"><i style="background:var(--ink)"></i>Your platform</span><span class="amt">keeps its commission</span></div>
+        <div class="flowrow"><span class="who"><i style="background:var(--accent)"></i>Badger</span><span class="amt">0.5% of royalties</span></div>
+        <div class="flow-note">A fraction of the commission you'd otherwise lose to off-app cash</div>
+      </div>
+      <div>
+        <div class="eyebrow">The economics</div>
+        <h2>Built to protect your take rate, not tax it.</h2>
+        <ul>
+          <li><span class="chk">✓</span><span>The driver is paid their usual share — nothing about their earnings changes.</span></li>
+          <li><span class="chk">✓</span><span><b>Your platform keeps its full commission</b> on every re-booked saved trip.</span></li>
+          <li><span class="chk">✓</span><span>Badger takes <b>0.5% of ride royalties</b> only on trips the feature creates.</span></li>
+          <li><span class="chk">✓</span><span>You trade a tiny fee for rides that would otherwise have leaked off-platform at full cost.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="request" class="band">
+    <div class="wrap">
+      <div class="cta-card">
+        <div>
+          <div class="eyebrow">Licensed access</div>
+          <h2>Bring Saved Drivers to your platform.</h2>
+          <p class="blurb">Access is granted to e-hailing operators under a licensing and integration agreement. Tell us a little about your platform and we'll set up a technical walkthrough.</p>
+          <div class="contact">
+            <div class="mailrow"><span id="salesEmail">tshidiso@badgertechsolutions.com</span><button type="button" id="copyEmail">Copy</button></div>
+          </div>
+        </div>
+        <div>
+          <form id="accessForm" novalidate>
+            <div>
+              <label for="company">Company</label>
+              <input id="company" name="company" autocomplete="organization" placeholder="Your e-hailing platform" required>
+            </div>
+            <div>
+              <label for="email">Work email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required>
+            </div>
+            <div class="field2">
+              <div>
+                <label for="scale">Monthly rides</label>
+                <select id="scale" name="scale">
+                  <option>Under 50k</option>
+                  <option>50k – 250k</option>
+                  <option>250k – 1M</option>
+                  <option>Over 1M</option>
+                </select>
+              </div>
+              <div>
+                <label for="region">Primary market</label>
+                <input id="region" name="region" placeholder="e.g. Gauteng, SA">
+              </div>
+            </div>
+            <div>
+              <label for="msg">Anything we should know?</label>
+              <textarea id="msg" name="msg" placeholder="Current apps, timelines, questions…"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit" style="justify-content:center">Request access</button>
+          </form>
+          <div class="submitted" id="done">
+            <b>Request received.</b><br>Thanks — once this page is wired to your backend, submissions will reach your partnerships team. For now, reach us directly at the email on the left.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div class="fb"><span class="mark" style="width:24px;height:24px"><svg class="paw" viewBox="0 0 1000 1000" aria-hidden="true"><path d="M 787.22 780.00 C 783.70 766.48 779.17 754.63 772.22 742.78 C 765.28 730.93 759.44 719.81 745.56 708.89 C 731.67 697.96 707.78 691.57 688.89 677.22 C 670.00 662.87 644.26 633.33 632.22 622.78 C 620.19 612.22 623.06 616.20 616.67 613.89 C 610.28 611.57 603.70 608.89 593.89 608.89 C 584.07 608.89 566.02 611.94 557.78 613.89 C 549.54 615.83 549.17 615.74 544.44 620.56 C 539.72 625.37 533.70 638.24 529.44 642.78 C 525.19 647.31 524.44 647.50 518.89 647.78 C 513.33 648.06 506.94 647.78 496.11 644.44 C 485.28 641.11 466.94 630.19 453.89 627.78 C 440.83 625.37 427.59 627.96 417.78 630.00 C 407.96 632.04 402.59 633.52 395.00 640.00 C 387.41 646.48 377.41 655.00 372.22 668.89 C 367.04 682.78 368.15 708.98 363.89 723.33 C 359.63 737.69 352.78 746.85 346.67 755.00 C 340.56 763.15 337.04 765.74 327.22 772.22 C 317.41 778.70 299.17 785.00 287.78 793.89 C 276.39 802.78 266.39 813.52 258.89 825.56 C 251.39 837.59 244.91 852.31 242.78 866.11 C 240.65 879.91 243.15 896.76 246.11 908.33 C 249.07 919.91 253.43 927.41 260.56 935.56 C 267.69 943.70 280.00 952.31 288.89 957.22 C 297.78 962.13 303.52 963.61 313.89 965.00 C 324.26 966.39 339.07 967.69 351.11 965.56 C 363.15 963.43 372.87 960.93 386.11 952.22 C 399.35 943.52 418.33 920.37 430.56 913.33 C 442.78 906.30 449.35 909.54 459.44 910.00 C 469.54 910.46 481.94 917.22 491.11 916.11 C 500.28 915.00 507.04 909.17 514.44 903.33 C 521.85 897.50 525.00 883.43 535.56 881.11 C 546.11 878.80 567.87 889.26 577.78 889.44 C 587.69 889.63 588.89 886.76 595.00 882.22 C 601.11 877.69 605.46 866.48 614.44 862.22 C 623.43 857.96 638.24 855.28 648.89 856.67 C 659.54 858.06 671.48 866.02 678.33 870.56 C 685.19 875.09 686.30 877.59 690.00 883.89 C 693.70 890.19 696.67 902.13 700.56 908.33 C 704.44 914.54 708.06 917.87 713.33 921.11 C 718.61 924.35 725.74 926.85 732.22 927.78 C 738.70 928.70 744.91 929.54 752.22 926.67 C 759.54 923.80 770.19 917.87 776.11 910.56 C 782.04 903.24 784.91 897.22 787.78 882.78 C 790.65 868.33 793.43 841.02 793.33 823.89 C 793.24 806.76 790.74 793.52 787.22 780.00 Z M 209.44 534.44 C 202.41 534.26 196.11 536.57 190.00 541.67 C 183.89 546.76 178.89 552.13 172.78 565.00 C 166.67 577.87 157.22 605.46 153.33 618.89 C 149.44 632.31 149.26 636.30 149.44 645.56 C 149.63 654.81 151.94 666.02 154.44 674.44 C 156.94 682.87 161.02 690.83 164.44 696.11 C 167.87 701.39 168.43 702.78 175.00 706.11 C 181.57 709.44 196.67 714.81 203.89 716.11 C 211.11 717.41 210.46 717.31 218.33 713.89 C 226.20 710.46 244.44 701.11 251.11 695.56 C 257.78 690.00 256.48 688.52 258.33 680.56 C 260.19 672.59 262.22 660.74 262.22 647.78 C 262.22 634.81 261.39 617.50 258.33 602.78 C 255.28 588.06 248.24 569.44 243.89 559.44 C 239.54 549.44 237.96 546.94 232.22 542.78 C 226.48 538.61 216.48 534.63 209.44 534.44 Z M 795.56 457.78 C 788.70 458.61 781.57 461.76 776.11 467.22 C 770.65 472.69 767.04 479.26 762.78 490.56 C 758.52 501.85 752.87 520.00 750.56 535.00 C 748.24 550.00 748.33 568.33 748.89 580.56 C 749.44 592.78 751.48 601.39 753.89 608.33 C 756.30 615.28 756.94 617.50 763.33 622.22 C 769.72 626.94 784.63 633.89 792.22 636.67 C 799.81 639.44 802.13 639.91 808.89 638.89 C 815.65 637.87 826.57 633.89 832.78 630.56 C 838.98 627.22 841.85 625.83 846.11 618.89 C 850.37 611.94 856.02 599.26 858.33 588.89 C 860.65 578.52 864.44 575.28 860.00 556.67 C 855.56 538.06 838.80 492.96 831.67 477.22 C 824.54 461.48 823.24 465.46 817.22 462.22 C 811.20 458.98 802.41 456.94 795.56 457.78 Z M 180.00 400.00 C 176.67 400.56 169.81 399.63 164.44 407.22 C 159.07 414.81 151.57 431.30 147.78 445.56 C 143.98 459.81 140.93 483.15 141.67 492.78 C 142.41 502.41 147.59 502.13 152.22 503.33 C 156.85 504.54 164.72 503.70 169.44 500.00 C 174.17 496.30 178.06 497.13 180.56 481.11 C 183.06 465.09 184.54 417.41 184.44 403.89 C 184.35 390.37 183.33 399.44 180.00 400.00 Z M 801.11 331.67 C 798.06 331.11 796.76 332.87 795.00 337.22 C 793.24 341.57 791.20 346.76 790.56 357.78 C 789.91 368.80 790.00 393.61 791.11 403.33 C 792.22 413.06 793.15 412.96 797.22 416.11 C 801.30 419.26 810.19 423.24 815.56 422.22 C 820.93 421.20 827.31 414.54 829.44 410.00 C 831.57 405.46 831.02 406.57 828.33 395.00 C 825.65 383.43 817.87 351.11 813.33 340.56 C 808.80 330.00 804.17 332.22 801.11 331.67 Z M 680.00 258.33 C 671.67 260.37 660.83 260.74 651.67 272.78 C 642.50 284.81 630.56 314.26 625.00 330.56 C 619.44 346.85 618.98 351.76 618.33 370.56 C 617.69 389.35 619.91 428.43 621.11 443.33 C 622.31 458.24 623.15 454.91 625.56 460.00 C 627.96 465.09 623.33 469.81 635.56 473.89 C 647.78 477.96 684.17 484.63 698.89 484.44 C 713.61 484.26 717.41 478.24 723.89 472.78 C 730.37 467.31 734.35 460.65 737.78 451.67 C 741.20 442.69 743.33 431.48 744.44 418.89 C 745.56 406.30 745.56 389.72 744.44 376.11 C 743.33 362.50 742.59 354.54 737.78 337.22 C 732.96 319.91 721.57 285.00 715.56 272.22 C 709.54 259.44 707.59 262.87 701.67 260.56 C 695.74 258.24 688.33 256.30 680.00 258.33 Z M 304.44 258.33 C 295.56 259.72 287.13 261.85 280.56 270.00 C 273.98 278.15 269.07 293.98 265.00 307.22 C 260.93 320.46 257.50 335.00 256.11 349.44 C 254.72 363.89 255.46 381.20 256.67 393.89 C 257.87 406.57 259.72 414.63 263.33 425.56 C 266.94 436.48 271.11 450.83 278.33 459.44 C 285.56 468.06 297.87 473.80 306.67 477.22 C 315.46 480.65 323.24 481.57 331.11 480.00 C 338.98 478.43 347.31 473.89 353.89 467.78 C 360.46 461.67 366.11 453.06 370.56 443.33 C 375.00 433.61 378.80 424.07 380.56 409.44 C 382.31 394.81 382.96 372.41 381.11 355.56 C 379.26 338.70 374.07 321.48 369.44 308.33 C 364.81 295.19 359.26 284.44 353.33 276.67 C 347.41 268.89 342.04 264.72 333.89 261.67 C 325.74 258.61 313.33 256.94 304.44 258.33 Z M 493.89 179.44 C 485.65 181.94 472.78 188.98 463.89 198.33 C 455.00 207.69 446.57 222.50 440.56 235.56 C 434.54 248.61 430.65 261.02 427.78 276.67 C 424.91 292.31 423.15 314.07 423.33 329.44 C 423.52 344.81 425.09 355.09 428.89 368.89 C 432.69 382.69 439.17 401.20 446.11 412.22 C 453.06 423.24 460.00 429.54 470.56 435.00 C 481.11 440.46 498.89 445.09 509.44 445.00 C 520.00 444.91 525.46 442.31 533.89 434.44 C 542.31 426.57 554.17 410.19 560.00 397.78 C 565.83 385.37 567.22 372.96 568.89 360.00 C 570.56 347.04 571.30 334.54 570.00 320.00 C 568.70 305.46 567.31 292.87 561.11 272.78 C 554.91 252.69 540.74 214.35 532.78 199.44 C 524.81 184.54 519.81 186.67 513.33 183.33 C 506.85 180.00 502.13 176.94 493.89 179.44 Z M 668.33 86.67 C 664.81 86.02 661.94 89.54 660.00 92.22 C 658.06 94.91 657.96 88.06 656.67 102.78 C 655.37 117.50 650.65 163.24 652.22 180.56 C 653.80 197.87 660.37 201.30 666.11 206.67 C 671.85 212.04 681.11 213.89 686.67 212.78 C 692.22 211.67 697.31 206.85 699.44 200.00 C 701.57 193.15 702.50 188.98 699.44 171.67 C 696.39 154.35 686.30 110.28 681.11 96.11 C 675.93 81.94 671.85 87.31 668.33 86.67 Z M 305.00 75.56 C 302.59 74.81 300.74 74.35 298.33 76.67 C 295.93 78.98 294.63 75.83 290.56 89.44 C 286.48 103.06 276.48 141.11 273.89 158.33 C 271.30 175.56 273.15 185.65 275.00 192.78 C 276.85 199.91 279.63 200.74 285.00 201.11 C 290.37 201.48 301.39 199.35 307.22 195.00 C 313.06 190.65 318.43 191.94 320.00 175.00 C 321.57 158.06 317.87 108.98 316.67 93.33 C 315.46 77.69 314.72 84.07 312.78 81.11 C 310.83 78.15 307.41 76.30 305.00 75.56 Z M 478.33 32.78 C 474.35 33.61 470.28 26.20 468.89 43.89 C 467.50 61.57 468.61 121.85 470.00 138.89 C 471.39 155.93 470.09 144.91 477.22 146.11 C 484.35 147.31 505.65 147.13 512.78 146.11 C 519.91 145.09 518.61 143.06 520.00 140.00 C 521.39 136.94 523.61 139.81 521.11 127.78 C 518.61 115.74 509.72 82.59 505.00 67.78 C 500.28 52.96 497.22 44.72 492.78 38.89 C 488.33 33.06 482.31 31.94 478.33 32.78 Z"/></svg></span>Badger Tech Solutions</div>
+    <div class="meta">Johannesburg, ZA · Licensed B2B SDK · © 2026</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var form=document.getElementById('accessForm'),done=document.getElementById('done');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!form.checkValidity()){form.reportValidity();return;}
+    form.hidden=true;done.style.display='block';
+  });
+  var btn=document.getElementById('copyEmail'),email=document.getElementById('salesEmail');
+  btn.addEventListener('click',function(){
+    var t=email.textContent.trim();
+    function flash(ok){btn.textContent=ok?'Copied':'Select it';setTimeout(function(){btn.textContent='Copy';},1400);}
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(t).then(function(){flash(true);},function(){select();flash(false);});
+    }else{select();flash(false);}
+    function select(){var r=document.createRange();r.selectNodeContents(email);var s=window.getSelection();s.removeAllRanges();s.addRange(r);}
+  });
+})();
+</script>
+
+</body>
+</html>
